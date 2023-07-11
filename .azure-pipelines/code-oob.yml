@@ -137,7 +137,7 @@ stages:
   jobs:
   - template: ./code-sign.yml
     parameters:
-      OOBBranch: $(BumpUpBranch)
+      OOBBranch: '$(BumpUpBranch)'
   - job: PulishForTest
     dependsOn: Release
     steps:
